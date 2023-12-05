@@ -26,16 +26,6 @@ function toggleMenu() {
     }
 }
 
-
-const meerLezenHiddenWaarom = document.getElementById('meer_lezen_hidden_waarom');
-const meerLezenWaarom = document.getElementById('meer_lezen_waarom');
-
-meerLezenWaarom.addEventListener('click', function () {
-    meerLezenHiddenWaarom.classList.toggle('show');
-    meerLezenWaarom.innerHTML = meerLezenWaarom.innerHTML === 'Minder lezen' ? 'Meer lezen' : 'Minder lezen';
-});
-
-
 function showUpButton() {
     var upButton = document.getElementById("up_button");
     if (upButton) {
@@ -119,3 +109,39 @@ document.getElementById('btn2').addEventListener('click', function() {
         }, 5000);
     }
 });
+
+function toggleMeerLezen1() {
+    var button = document.querySelector('#meer_lezen_1');
+    var buttonText = button.textContent.trim();
+    var meerLezen = document.querySelector('#desktop_text_1');
+    if (buttonText === 'Meer lezen') {
+        button.textContent = 'Minder lezen';
+    } else {
+        button.textContent = 'Meer lezen';
+    }
+    meerLezen.style.display = (meerLezen.style.display === 'none' || meerLezen.style.display === '') ? 'inline' : 'none';
+}
+
+function toggleMeerLezen2() {
+    var button = document.querySelector('#meer_lezen_2');
+    var buttonText = button.textContent.trim();
+    var meerLezen = document.querySelector('#desktop_text_2');
+    if (buttonText === 'Meer lezen') {
+        button.textContent = 'Minder lezen';
+    } else {
+        button.textContent = 'Meer lezen';
+    }
+    meerLezen.style.display = (meerLezen.style.display === 'none' || meerLezen.style.display === '') ? 'inline' : 'none';
+}
+
+function toggleMeerLezen3() {
+    var button = document.querySelector('#meer_lezen_3');
+    var buttonText = button.textContent.trim();
+    var meerLezen = document.querySelector('#desktop_text_3');
+    if (buttonText === 'Meer lezen') {
+        button.textContent = 'Minder lezen';
+    } else {
+        button.textContent = 'Meer lezen';
+    }
+    meerLezen.style.display = (meerLezen.style.display === 'none' || meerLezen.style.display === '') ? 'inline' : 'none';
+}

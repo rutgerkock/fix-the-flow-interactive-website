@@ -172,6 +172,19 @@ h1 {
     transition: 0.3s ease;
 }
 
+.lezen_container {
+    max-width: 35rem;
+    line-height: 1.4;
+}
+
+.desktop_text {
+    display: none;
+}
+
+.meer_lezen_desktop {
+    display: none;
+}
+
 #down {
     text-decoration: none;
     max-width: 1rem;
@@ -217,15 +230,6 @@ h1 {
     bottom: 0;
     max-width: 100%;
     height: 26%;
-}
-
-#meer_lezen_hidden_waarom {
-    display: none;
-    margin-top: 1rem;
-}
-
-#meer_lezen_hidden_waarom.show {
-    display: block;
 }
 
 #app_section {
@@ -414,6 +418,20 @@ footer a::after {
     font-size: 2.8rem;
     transition: top 0.1s ease, font-size 0.3s ease;
     padding-left: .5rem;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fade3 0.4s ease-out forwards;
+}
+
+@keyframes fade3 {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 #phone_container {
@@ -539,6 +557,7 @@ header a:nth-of-type(1) {
         height: auto;
         width: 100%;
     }
+    
 }
 
 @media screen and (min-width: 900px) {
@@ -554,9 +573,6 @@ header a:nth-of-type(1) {
         transform: translateY(-30px);
         animation: fade 0.4s ease-out forwards;
     }
-    #contact_section form {
-        width: 50%;
-    }
     @keyframes fade {
         from {
             opacity: 0;
@@ -566,5 +582,25 @@ header a:nth-of-type(1) {
             opacity: 1;
             transform: translateX(0);
         }
+    }
+    #contact_section form {
+        width: 50%;
+    }
+    .desktop_text {
+        display: inline;
+        opacity: 0;
+        animation: fade4 0.4s ease forwards;
+    }
+    @keyframes fade4 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .meer_lezen {
+        display: none;
     }
 }
