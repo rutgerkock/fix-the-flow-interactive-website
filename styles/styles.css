@@ -373,13 +373,14 @@ footer {
     position: relative;
     margin: 3rem 8% 3rem 8%;
     border-top: 2px solid #4F686F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 footer ul {
     padding-top: 0.8rem;
     list-style: none;
-    display: flex;
-    flex-direction: column;
     gap: 0.8rem;
 }
 
@@ -593,4 +594,9 @@ header a:nth-of-type(1) {
     .meer_lezen {
         display: none;
     }
+/* 
+    footer ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } */
 }
