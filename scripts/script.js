@@ -85,6 +85,10 @@ document.getElementById('empty').addEventListener('click', function() {
 
 document.getElementById('btn1').addEventListener('click', function() {
     btn1.classList.toggle('opacity');
+    if (btn1.classList.contains("viewed")) {
+        btn1.classList.remove('viewed');
+    } else {
+    }
     setTimeout(() => {
         btn1.classList.toggle('opacity');
         btn1.classList.add('viewed');
@@ -93,6 +97,10 @@ document.getElementById('btn1').addEventListener('click', function() {
 
 document.getElementById('btn2').addEventListener('click', function() {
     btn2.classList.toggle('opacity');
+    if (btn2.classList.contains("viewed")) {
+        btn2.classList.remove('viewed');
+    } else {
+    }
     setTimeout(() => {
         btn2.classList.toggle('opacity');
         btn2.classList.add('viewed');
