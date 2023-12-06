@@ -451,32 +451,19 @@ footer a::after {
     border-radius: 50%;
     cursor: pointer;
     z-index: 800;
-    max-width: 1rem;
-    max-height: 1rem;
+    width: 1rem;
+    height: 1rem;
     color: transparent;
-    transform-origin: center center;
     padding: 0.7rem;
+    transition: 0.25s ease-out;
 }
 
 .opacity {
-    animation: grow2 0.3s forwards;
+    width: 11rem;
+    height: 5rem;
+    color: white;
+    border-radius: 1rem;
 }
-
-@keyframes grow2 {
-    0% {
-      min-width: 1rem;
-      min-height: 1rem;
-      color: transparent;
-      border-radius: 50%;
-    }
-  
-    100% {
-      min-width: 11rem;
-      min-height: 5rem;
-      color: white;
-      border-radius: 1rem;
-    }
-  }
 
 #phone_container button:nth-of-type(1) {
     top: 21%;
@@ -503,6 +490,7 @@ footer a::after {
     color: white;
     background-image: none;
     z-index: 12;
+    cursor: pointer;
 }
 
 header a:nth-of-type(1) {
