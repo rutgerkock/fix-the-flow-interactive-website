@@ -85,10 +85,18 @@ document.getElementById('empty').addEventListener('click', function() {
 
 document.getElementById('btn1').addEventListener('click', function() {
     btn1.classList.toggle('opacity');
+    setTimeout(() => {
+        btn1.classList.toggle('opacity');
+        btn1.classList.add('viewed');
+    }, 5000);
 });
 
 document.getElementById('btn2').addEventListener('click', function() {
     btn2.classList.toggle('opacity');
+    setTimeout(() => {
+        btn2.classList.toggle('opacity');
+        btn2.classList.add('viewed');
+    }, 5000);
 });
 
 
