@@ -84,31 +84,14 @@ document.getElementById('empty').addEventListener('click', function() {
   });
 
 document.getElementById('btn1').addEventListener('click', function() {
-    const p1 = document.getElementById('p1');
-
-    if (window.getComputedStyle(p1).getPropertyValue('opacity') === '1') {
-        p1.style.opacity = '0';
-        
-    } else {
-        p1.style.opacity = '1';
-        setTimeout(function() {
-            p1.style.opacity = '0';
-        }, 5000);
-    }
+    btn1.classList.toggle('opacity');
 });
 
 document.getElementById('btn2').addEventListener('click', function() {
-    const p1 = document.getElementById('p2');
-
-    if (window.getComputedStyle(p2).getPropertyValue('opacity') === '1') {
-        p2.style.opacity = '0';
-    } else {
-        p2.style.opacity = '1';
-        setTimeout(function() {
-            p1.style.opacity = '0';
-        }, 5000);
-    }
+    btn2.classList.toggle('opacity');
 });
+
+
 
 function toggleMeerLezen1() {
     var button = document.querySelector('#meer_lezen_1');
