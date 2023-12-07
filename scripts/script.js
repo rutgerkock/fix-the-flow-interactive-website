@@ -83,32 +83,6 @@ document.getElementById('empty').addEventListener('click', function() {
     }
   });
 
-document.getElementById('btn1').addEventListener('click', function() {
-    btn1.classList.toggle('opacity');
-    if (btn1.classList.contains("viewed")) {
-        btn1.classList.remove('viewed');
-    } else {
-    }
-    setTimeout(() => {
-        btn1.classList.toggle('opacity');
-        btn1.classList.add('viewed');
-    }, 5000);
-});
-
-document.getElementById('btn2').addEventListener('click', function() {
-    btn2.classList.toggle('opacity');
-    if (btn2.classList.contains("viewed")) {
-        btn2.classList.remove('viewed');
-    } else {
-    }
-    setTimeout(() => {
-        btn2.classList.toggle('opacity');
-        btn2.classList.add('viewed');
-    }, 5000);
-});
-
-
-
 function toggleMeerLezen1() {
     var button = document.querySelector('#meer_lezen_1');
     var buttonText = button.textContent.trim();
@@ -144,3 +118,28 @@ function toggleMeerLezen3() {
     }
     meerLezen.style.display = (meerLezen.style.display === 'none' || meerLezen.style.display === '') ? 'inline' : 'none';
 }
+
+
+document.getElementById('btn1').addEventListener('click', function() {
+    btn1.classList.toggle('opacity');
+    if (btn1.classList.contains("viewed")) {
+        btn1.classList.remove('viewed');
+    } else {
+    }
+    setTimeout(() => {
+        btn1.classList.toggle('opacity');
+        btn1.classList.add('viewed');
+    }, 5000);
+});
+
+document.getElementById('btn2').addEventListener('click', function() {
+    btn2.classList.toggle('opacity');
+    if (btn2.classList.contains("viewed")) {
+        btn2.classList.remove('viewed');
+    } else {
+    }
+    setTimeout(() => {
+        btn2.classList.toggle('opacity');
+        btn2.classList.add('viewed');
+    }, 5000);
+});
