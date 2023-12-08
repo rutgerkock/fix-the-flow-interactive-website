@@ -279,7 +279,7 @@ h1 {
 .button_phone {
     position: absolute;
     background-color: dodgerblue;
-    z-index: 999;
+    z-index: 823;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -316,7 +316,6 @@ h1 {
 
 #text_container.toggle_text {
     margin-left: -1rem;
-    opacity: 1;
 }
 
 #article_section {
@@ -558,6 +557,8 @@ header a:nth-of-type(1) {
 }
 
 @media screen and (min-width: 900px) {
+
+
     header a:nth-of-type(1) {
         display: block;
         opacity: 0;
@@ -603,5 +604,20 @@ header a:nth-of-type(1) {
     }
     footer {
         flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    #app_container {
+        position: relative;
+        top: -73vh;
+        right: -64%;
+    }
+
+    #app_section {
+        max-height: 30rem;
+    }
+    .toggle_phone {
+        margin-left: 0;
     }
 }
