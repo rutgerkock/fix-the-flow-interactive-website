@@ -248,7 +248,7 @@ h1 {
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 0 1rem 1rem 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 11rem;
     height: auto;
     position: absolute;
@@ -256,8 +256,9 @@ h1 {
     text-align: left;
 }
 
-#text_container button.show {
-    display: block;
+#text_container button {
+    border: none;
+    background-color: transparent;
 }
 
 #p_phone_1.show {
