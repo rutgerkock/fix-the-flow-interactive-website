@@ -56,7 +56,6 @@ window.addEventListener("scroll", function() {
 window.addEventListener("load", hideUpButton);
 
 
-
 document.addEventListener('DOMContentLoaded', function () {
     var stickyTitle = document.getElementById('sticky_titel');
     var scrollTrigger = document.getElementById('scrolltrigger').offsetTop;
@@ -117,29 +116,15 @@ function toggleMeerLezen3() {
         button.textContent = 'Meer lezen';
     }
     meerLezen.style.display = (meerLezen.style.display === 'none' || meerLezen.style.display === '') ? 'inline' : 'none';
+};
+
+function test() {
+    const phonescreen = document.getElementById('phone-screen');
+    const text = document.getElementById('text_container');
+    const button = document.getElementById('button_phone_1');
+    const text1 = document.getElementById('p_phone_1');
+    phonescreen.classList.toggle('toggle_phone');
+    text.classList.toggle('toggle_text');
+    button.classList.add("pulse");
+    text1.classList.toggle('show');
 }
-
-
-document.getElementById('btn1').addEventListener('click', function() {
-    btn1.classList.toggle('opacity');
-    if (btn1.classList.contains("viewed")) {
-        btn1.classList.remove('viewed');
-    } else {
-    }
-    setTimeout(() => {
-        btn1.classList.toggle('opacity');
-        btn1.classList.add('viewed');
-    }, 5000);
-});
-
-document.getElementById('btn2').addEventListener('click', function() {
-    btn2.classList.toggle('opacity');
-    if (btn2.classList.contains("viewed")) {
-        btn2.classList.remove('viewed');
-    } else {
-    }
-    setTimeout(() => {
-        btn2.classList.toggle('opacity');
-        btn2.classList.add('viewed');
-    }, 5000);
-});
