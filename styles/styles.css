@@ -253,6 +253,11 @@ h1 {
     height: auto;
     position: absolute;
     display: none;
+    text-align: left;
+}
+
+#text_container button.show {
+    display: block;
 }
 
 #p_phone_1.show {

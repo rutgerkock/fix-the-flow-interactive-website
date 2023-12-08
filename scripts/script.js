@@ -123,8 +123,9 @@ function test() {
     const text = document.getElementById('text_container');
     const button = document.getElementById('button_phone_1');
     const text1 = document.getElementById('p_phone_1');
+
     phonescreen.classList.toggle('toggle_phone');
     text.classList.toggle('toggle_text');
     button.classList.add("pulse");
     text1.classList.toggle('show');
-}
+  }
