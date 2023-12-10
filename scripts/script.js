@@ -128,4 +128,4 @@ function test() {
     text.classList.toggle('toggle_text');
     button.classList.add("pulse");
     text1.classList.toggle('show');
-  }
+}
