@@ -57,7 +57,7 @@ header button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    margin: 0.6rem 0.6rem 0 0;
+    margin: 0.8% 0.8% 0 0;
     scale: 0.8;
     z-index: 12;
 }
@@ -269,12 +269,22 @@ p {
     padding-top: 9rem;
 }
 
-.section0 img {
+.section0 img:nth-of-type(1) {
     object-fit: cover;
     position: absolute;
     bottom: 0;
     max-width: 100%;
     height: 26%;
+}
+
+.section0 img:nth-of-type(2) {
+    object-fit:fill;
+    position: absolute;
+    bottom: 0;
+    width: 105vw;
+    display: none;
+    left: -2.5vw;
+    max-height: 40rem;
 }
 
 .section0 .titel{
@@ -299,7 +309,7 @@ p {
 
 #text_container {   
     position: relative;
-    margin-left: 16rem;
+    margin-left: 18%;
     display: flex;
     flex-direction: column;
     transition: margin 0.3s ease;
@@ -511,7 +521,7 @@ textarea {
     background-color: currentColor;
     aspect-ratio: 1/.86;
     transition: 0.3s ease;
-    height: 0.6rem;
+    height: 0.8%;
     top: 0;
     margin-left: .5rem;
 }
@@ -525,6 +535,24 @@ textarea {
     header a {
         display: block;
     }
+    .section0 img:nth-of-type(1) {
+        display: none;
+    }
+    .section0 img:nth-of-type(2) {
+        display: block;
+    }
+    #dropdownMenu {
+        width: 14rem;
+    }
+    @keyframes grow {
+    from {
+        min-height: 0;
+    }
+    to {
+        min-height: 20.5rem;
+    }
+}
+
 }
 
 @media screen and (min-width: 800px){ 
@@ -534,5 +562,47 @@ textarea {
 
     .desktop_text {
         display: inline;
+    }
+    .toggle_phone {
+        margin-left: 0rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(6, min-content);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .section1 { grid-area: 1 / 1 / 2 / 8; }
+        .section2 { grid-area: 2 / 1 / 3 / 8; }
+        .section3 { grid-area: 3 / 1 / 4 / 5; }
+        .section4 { grid-area: 4 / 1 / 5 / 8; }
+        .section5 { grid-area: 5 / 1 / 6 / 8; }
+        .section6 { grid-area: 6 / 1 / 7 / 8; }
+        .section7 { grid-area: 2 / 5 / 5 / 8; }
+
+    .section7 {
+        padding-top: 6rem;
+    }
+    #text_container {   
+        margin-left: 18%;
+    }
+    .toggle_phone {
+        margin-left: -8rem;
+    }
+
+    .section1, .section2, .section3, .section4, .section5 , .section7 {
+        padding-left: 6rem;
+    }
+    .section0 .titel{
+        margin-left: 6rem;
+    }
+    .section6 {
+        margin-left: 6rem;
+
     }
 }
