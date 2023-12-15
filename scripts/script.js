@@ -14,6 +14,42 @@ menuLinks.forEach(function (link) {
     });
 });
 
+function toggleMeerLezen1() {
+    var button = document.querySelector('#meer_lezen_1');
+    var buttonText = button.textContent.trim();
+    var meerLezen = document.querySelector('#desktop_text_1');
+    if (buttonText === 'Meer lezen') {
+        button.textContent = 'Minder lezen';
+    } else {
+        button.textContent = 'Meer lezen';
+    }
+    meerLezen.style.display = (meerLezen.style.display === 'none' || meerLezen.style.display === '') ? 'inline' : 'none';
+}
+
+function toggleMeerLezen2() {
+    var button = document.querySelector('#meer_lezen_2');
+    var buttonText = button.textContent.trim();
+    var meerLezen = document.querySelector('#desktop_text_2');
+    if (buttonText === 'Meer lezen') {
+        button.textContent = 'Minder lezen';
+    } else {
+        button.textContent = 'Meer lezen';
+    }
+    meerLezen.style.display = (meerLezen.style.display === 'none' || meerLezen.style.display === '') ? 'inline' : 'none';
+}
+
+function toggleMeerLezen3() {
+    var button = document.querySelector('#meer_lezen_3');
+    var buttonText = button.textContent.trim();
+    var meerLezen = document.querySelector('#desktop_text_3');
+    if (buttonText === 'Meer lezen') {
+        button.textContent = 'Minder lezen';
+    } else {
+        button.textContent = 'Meer lezen';
+    }
+    meerLezen.style.display = (meerLezen.style.display === 'none' || meerLezen.style.display === '') ? 'inline' : 'none';
+};
+
 function toggleMenu() {
     if (!dropdownMenu.classList.contains('dropdownMenu-expanded')) {
         dropdownMenu.classList.add('dropdownMenu-expanded');
@@ -69,54 +105,19 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', handleScroll);
 });
 
-document.getElementById('empty').addEventListener('click', function() {
-    const image1 = document.getElementById('img1');
-    const image2 = document.getElementById('img2');
-  
-    if (image2.style.opacity === '1') {
-      image2.style.opacity = '0';
-      image1.style.opacity = '1';
+function toggleMenu() {
+    if (!dropdownMenu.classList.contains('dropdownMenu-expanded')) {
+        dropdownMenu.classList.add('dropdownMenu-expanded');
+        menuButton.classList.add('expanded');
+        header.classList.add('header-expanded');
     } else {
-      image2.style.opacity = '1';
-      image1.style.opacity = '0';
+        dropdownMenu.classList.remove('dropdownMenu-expanded');
+        menuButton.classList.remove('expanded');
+        header.classList.remove('header-expanded');
     }
-  });
-
-function toggleMeerLezen1() {
-    var button = document.querySelector('#meer_lezen_1');
-    var buttonText = button.textContent.trim();
-    var meerLezen = document.querySelector('#desktop_text_1');
-    if (buttonText === 'Meer lezen') {
-        button.textContent = 'Minder lezen';
-    } else {
-        button.textContent = 'Meer lezen';
-    }
-    meerLezen.style.display = (meerLezen.style.display === 'none' || meerLezen.style.display === '') ? 'inline' : 'none';
 }
 
-function toggleMeerLezen2() {
-    var button = document.querySelector('#meer_lezen_2');
-    var buttonText = button.textContent.trim();
-    var meerLezen = document.querySelector('#desktop_text_2');
-    if (buttonText === 'Meer lezen') {
-        button.textContent = 'Minder lezen';
-    } else {
-        button.textContent = 'Meer lezen';
-    }
-    meerLezen.style.display = (meerLezen.style.display === 'none' || meerLezen.style.display === '') ? 'inline' : 'none';
-}
 
-function toggleMeerLezen3() {
-    var button = document.querySelector('#meer_lezen_3');
-    var buttonText = button.textContent.trim();
-    var meerLezen = document.querySelector('#desktop_text_3');
-    if (buttonText === 'Meer lezen') {
-        button.textContent = 'Minder lezen';
-    } else {
-        button.textContent = 'Meer lezen';
-    }
-    meerLezen.style.display = (meerLezen.style.display === 'none' || meerLezen.style.display === '') ? 'inline' : 'none';
-};
 
 function test() {
     const phonescreen = document.getElementById('phone-screen');
